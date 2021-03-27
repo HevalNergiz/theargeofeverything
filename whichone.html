@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>theargeofeverything</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {
+packages: ['corechart']
+});
+</script>
+</head>
+
+<body style="background: #bfbfbf;">
+    <header class="d-xl-flex justify-content-xl-center" style="margin-top: 50px;">
+        <div class="d-xl-flex flex-grow-1 justify-content-xl-center shadowbox" style="margin: 15px;background: url(&quot;assets/img/baranblur.png&quot;) repeat-y, #bfbfbf;border-radius: 35px;background-size: cover, auto;max-width: 1404px;padding-top: 10px;padding-bottom: 10px;">
+            <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                <div class="col d-xl-flex justify-content-xl-center align-items-xl-center" style="padding: 23px;padding-right: 34px;">
+                    <div class="d-xl-flex flex-grow-1 justify-content-xl-center align-items-xl-center" style="background: #000605;margin-right: 5px;margin-left: 5px;padding-top: 29px;padding-bottom: 45px;border-radius: 29px;box-shadow: 0px 5px 20px var(--gray);height: 100%;">
+                        <div class="flex-grow-1" style="padding-right: 15px;padding-left: 15px;">
+                            <h1 class="menuheading" style="font-size: 43px;margin-bottom: 70px;">ENIGMA'YA <br>HOŞ GELDİN</h1>
+                            <section class="d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center" style="margin: 10px;">
+                                <div class="d-md-flex flex-grow-1 justify-content-md-center editandcreate" data-bss-hover-animate="pulse">
+                                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 flex-grow-1 chrow" style="margin-left: 0px;margin-right: 0px;">
+                                        <div class="col d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-sm-center justify-content-md-center align-items-md-center align-items-lg-center" style="max-width: 20%;margin-left: 5px;padding-right: 0px;padding-left: 0px;"><img src="assets/img/editwwww.png" style="margin: 0px;border-radius: 34px;padding: 5px;width: 70px;height: 70px;"></div>
+                                        <div class="col text-nowrap d-flex d-lg-flex flex-grow-1 align-items-center my-auto m-sm-auto m-md-auto justify-content-lg-center align-items-lg-center m-lg-auto m-xl-auto welcometoenigmabutton"><a class="flex-grow-1" href="charactermenu.html">
+                                                <h1 class="editandcreatetitles">Karakter Düzenleme</h1>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center" style="margin: 10px;">
+                                <div class="d-md-flex flex-grow-1 justify-content-md-center editandcreate" data-bss-hover-animate="pulse">
+                                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 flex-grow-1 chrow" style="margin-left: 0px;margin-right: 0px;">
+                                        <div class="col d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-sm-center justify-content-md-center align-items-md-center align-items-lg-center" style="max-width: 20%;margin-left: 5px;padding-right: 0px;padding-left: 0px;"><img src="assets/img/addwwww.png" style="margin: 0px;border-radius: 34px;padding: 5px;width: 70px;height: 70px;"></div>
+                                        <div class="col text-nowrap d-flex d-lg-flex flex-grow-1 align-items-center my-auto m-sm-auto m-md-auto justify-content-lg-center align-items-lg-center m-lg-auto m-xl-auto welcometoenigmabutton"><a class="flex-grow-1" href="#">
+                                                <h1 class="editandcreatetitles">Karakter Oluşturma</h1>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center" style="margin: 10px;">
+                                <div class="d-md-flex flex-grow-1 justify-content-md-center editandcreate" data-bss-hover-animate="pulse">
+                                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 flex-grow-1 chrow" style="margin-left: 0px;margin-right: 0px;">
+                                        <div class="col d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-sm-center justify-content-md-center align-items-md-center align-items-lg-center" style="max-width: 20%;margin-left: 5px;padding-right: 0px;padding-left: 0px;"><img src="assets/img/bothwwww.png" style="margin: 0px;border-radius: 34px;padding: 5px;width: 70px;height: 70px;"></div>
+                                        <div class="col text-nowrap d-flex d-lg-flex flex-grow-1 align-items-center my-auto m-sm-auto m-md-auto justify-content-lg-center align-items-lg-center m-lg-auto m-xl-auto welcometoenigmabutton"><a class="flex-grow-1" href="#">
+                                                <h1 class="editandcreatetitles">Oluşturma/Düzenleme</h1>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-lg-flex d-xl-flex justify-content-lg-center align-items-lg-center justify-content-xl-center" style="padding-top: 15px;padding-bottom: 15px;">
+                    <div class="d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 justify-content-sm-center justify-content-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center" style="max-width: 100%;">
+                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center cerceve" style="box-shadow: 0px 5px 20px var(--gray);max-width: 478px;padding: 7px;"><img class="sideimage" src="assets/img/braingif.gif" style="padding: 12px;border-radius: 35px;width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js%22%3E"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

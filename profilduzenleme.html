@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>theargeofeverything</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {
+packages: ['corechart']
+});
+</script>
+</head>
+
+<body style="background: #e8e8e8;">
+    <section class="d-xl-flex justify-content-xl-center shadowbox bokeh" style="margin-top: 29px;padding-top: 40px;background: url(&quot;assets/img/baranblur.png&quot;) repeat-y, rgba(191,191,191,0);margin-right: 25px;margin-left: 25px;border-radius: 35px;padding-bottom: 40px;background-size: cover, auto;filter: brightness(100%);margin-bottom: 29px;">
+        <div class="shadowbox" style="background: #000605;margin-left: 20px;margin-right: 20px;padding-left: 20px;padding-right: 20px;border-radius: 35px;margin-top: 10px;margin-bottom: 10px;padding-bottom: 20px;padding-top: 5px;max-width: 1440px;">
+            <div style="padding-top: 20px;padding-bottom: 20px;">
+                <h1 class="menuheading" style="text-align: center;font-family: Poppins, sans-serif;font-size: 47px;">PROFİL DÜZENLEME</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3" style="margin-right: 0px;margin-left: 0px;">
+                <div class="col offset-0 d-md-flex order-1 order-sm-1 align-items-md-end order-md-1 order-lg-1 align-items-xl-start order-xl-1">
+                    <figure class="figure">
+                        <div class="d-flex justify-content-center">
+                            <div class="flex-grow-1 cerceve" style="max-width: 90%;padding-bottom: 9px;"><img class="img-fluid sideimage" src="assets/img/120064663_314846503148121_4187833677381640198_n.jpg" style="width: 100%;">
+                                <div>
+                                    <p style="margin-bottom: 0px;color: #000a16;font-size: 20px;font-weight: 600;text-align: center;">Ad:&nbsp;<span id="namespan" style="color: #f1f1f1;">Baran</span>&nbsp; &nbsp; Soyad:&nbsp;<span id="surnamespan" style="color: #f1f1f1;">Arslan</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="flex-grow-1" style="margin-top: 9px;max-width: 90%;"><a class="btn btn-primary flex-grow-1 gradientbutton" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="font-size: 20px;">Kimliği Düzenle</a>
+                                <div class="collapse" id="collapse-1">
+                                    <form><input class="form-control createid" type="text" placeholder="Ad: Baran" style="background: #bfbfbf;"><input class="form-control createid" type="text" placeholder="Soyad: Arslan" style="background: #bfbfbf;color: rgb(255,255,255);"><input class="form-control createid" type="text" placeholder="Uruk: Türk" style="background: #bfbfbf;color: rgb(255,255,255);"><input class="form-control createid" type="text" placeholder="Dizi Nick: Baran" style="background: #bfbfbf;color: rgb(255,255,255);"><input class="form-control createid" type="text" placeholder="Doğum Tarihi: 10.12.1993" style="background: #bfbfbf;color: rgb(255,255,255);"><button class="btn btn-primary gradientbutton" type="button" style="max-width: 60%;">Kaydet</button></form>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col d-xl-flex order-3 order-sm-3 order-md-3 order-lg-2 align-items-xl-start order-xl-2">
+                    <figure class="figure d-flex d-xl-flex justify-content-center justify-content-xl-center">
+                        <div class="cerceve" style="max-width: 80%;padding-bottom: 9px;"><img class="img-fluid sideimage" src="assets/img/bodygif.gif">
+                            <div>
+                                <p style="margin-bottom: 0px;color: #000a16;font-size: 20px;font-weight: 600;text-align: center;">Boy:&nbsp;<span id="namespan" style="color: #f1f1f1;">185cm</span>&nbsp; &nbsp; Kilo:&nbsp;<span id="surnamespan" style="color: #f1f1f1;">75kg</span></p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col d-sm-flex d-xl-flex order-2 justify-content-sm-center order-sm-2 order-md-2 order-lg-3 justify-content-xl-center order-xl-3">
+                    <figure class="figure" style="max-width: 100%;">
+                        <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center">
+                            <div class="cerceve" style="max-width: 100%;padding-bottom: 9px;"><img class="img-fluid sideimage" src="assets/img/12165489.png">
+                                <div class="d-flex d-xl-flex justify-content-center justify-content-xl-center"><a class="text-center figurelink icinde" href="#" style="margin-top: 5px;font-size: 20px;font-family: Poppins, sans-serif;">Kodu okutamıyor musun?</a></div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 21px;"><a class="btn btn-primary gradientbutton" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button" style="font-size: 20px;">Biylojik Özellikleri Düzenle</a>
+                            <div class="collapse" id="collapse-2">
+                                <form><input class="form-control createid" type="number" placeholder="Boy: 185cm"><input class="form-control createid" type="number" placeholder="Kilo: 75kg"><input class="form-control createid" type="text" placeholder="Kan grubu: A-Rh+"><input class="form-control createid" type="text" placeholder="Cinsel Yönelim: Hetero Seksüel"><button class="btn btn-primary gradientbutton" type="button" style="max-width: 60%;">Kaydet</button></form>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js%22%3E"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
